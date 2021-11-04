@@ -6,26 +6,32 @@
     <title>A very important knowledge repository</title>
     <meta name="description" content="A very important knowledge repository">
     <meta name="author" content="H.Kotovicz">
-    
+    <script src="./jquery.js"></script>
+
 </head>
 
 <body>
 
+    <div id = "honeyPot">
+        <h1>Knowledge Repo</h1>
 
-    <video width=100%; height=100%; autoplay loop muted id="vid" onload="myFunction">
+        <h3 style="color:red">Error generating library from documentation files</h3>
+        <button id="my-button">Switch to simplified fallback</button>
+    
+    </div>
+    <video  width="100%" height="0px" loop muted id="vid" onload="myFunction">
         <source src="NeverGonnaGiveYouUp2.mp4" type="video/mp4">
         <source src="NeverGonnaGiveYouUp2.webm" type="video/webm">
-    </video>
+    </video> 
 
     <script>
-       function myFunction() {
-        sleep(200);
-        var video=document.getElementById("vid") ;
-        video.muted = !video.muted;
-        video.volume =1;
-}
-       
-    //    document.getElementById('vid').muted = false;
+      $('#my-button').click((event) => {
+        $('#vid').attr("height", "100%")
+        $('#vid').prop("muted", false)
+        $('#vid').get(0).play()
+        
+        $('#honeyPot').remove()
+      })
     </script>
     
 </body>
