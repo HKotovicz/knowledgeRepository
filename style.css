@@ -1,0 +1,63 @@
+@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
+@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
+
+.center {
+  margin: 0 auto;
+}
+
+.awesome {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #313131;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: red;
+  }
+  20% {
+    color: green;
+  }
+  30% {
+    color: rgb(253, 4, 178);
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: #15ff00;
+  }
+  60% {
+    color: red;
+  }
+  70% {
+    color: blue;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: rgb(253, 4, 178);
+  }
+  100% {
+    color: rgb(217, 255, 0);
+  }
+}
+#text {
+  width: 800px;
+  height: 100px;
+  z-index: 1;
+  position:absolute;
+  top:150px;
+  left:150px;
+}
